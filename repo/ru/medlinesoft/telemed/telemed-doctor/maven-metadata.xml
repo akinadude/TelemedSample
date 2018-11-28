@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>ru.medlinesoft.telemed</groupId>
+  <artifactId>telemed-doctor</artifactId>
+  <versioning>
+    <release>0.8</release>
+    <versions>
+      <version>0.8</version>
+    </versions>
+    <lastUpdated>20180608112746</lastUpdated>
+  </versioning>
+</metadata>
