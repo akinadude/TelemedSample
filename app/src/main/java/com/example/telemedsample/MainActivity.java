@@ -8,6 +8,9 @@ import android.util.Log;
 import android.view.View;
 
 //import ru.medlinesoft.telemed.TelemedApplicationManager;
+//import ru.medlinesoft.telemed.presentation.SplashActivity;
+import java.sql.Date;
+import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -72,15 +75,16 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onFailure(String s, Throwable throwable) {
-
+                Log.d("TAG", "onFailure");
             }
         };
 
-        TelemedClientManager.login("rtokarenko@docdoc.ru", "123", getApplicationContext(), authListener);
+        TelemedClientManager.login("zzz@zz.zz", "1234", getApplicationContext(), authListener);
     }
 
     public void doctorsList(View view) {
-        String tag = "DOCTORSLIST";
+        String tag = "REGISTER";
+        /*String tag = "DOCTORSLIST";
         RequestListener doctorListListener = new RequestListener<PageView<DoctorShortPublicView>>() {
             @Override
             public void onResponse(PageView<DoctorShortPublicView> doctorShortPublicViewPageView) {
@@ -141,7 +145,57 @@ public class MainActivity extends AppCompatActivity {
             }
         };
 
-        TelemedClientManager.login("rtokarenko@docdoc.ru", "123", getApplicationContext(), authListener);
+        TelemedClientManager.login("rtokarenko@docdoc.ru", "123", getApplicationContext(), authListener);*/
+
+        /*RequestListener appointmentListener = new RequestListener<AppointmentView>() {
+            @Override
+            public void onResponse(AppointmentView appointmentView) {
+                Log.d("TAG", "id: " + appointmentView.id);
+
+                Intent intent = new Intent(MainActivity.this, VideoChatActivity.class);
+                intent.putExtra("APPOINTMENT_ID", appointmentView.id);
+                startActivity(intent);
+            }
+
+            @Override
+            public void onFailure(String s, Throwable throwable) {
+                Log.d("TAG", "onFailure");
+            }
+        };
+
+        RequestListener<PatientRegistrationResultView> listener = new RequestListener<PatientRegistrationResultView>() {
+            @Override
+            public void onResponse(PatientRegistrationResultView patientRegistrationResultView) {
+                Log.d("TAG", "onResponse");
+                Log.d("TAG", "patientId: " + patientRegistrationResultView.patientId);
+                Log.d("TAG", "state: " + patientRegistrationResultView.state);
+
+                //create consultation
+                TelemedClientManager.appointmentQueue(AgeGroup.ADULT, appointmentListener);
+            }
+
+            @Override
+            public void onFailure(String s, Throwable throwable) {
+                Log.d("TAG", "onFailure");
+            }
+        };
+
+        //71111111111
+        //1111
+        TelemedClientManager.register(
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                getApplicationContext(),
+                listener
+        );*/
     }
 
 }

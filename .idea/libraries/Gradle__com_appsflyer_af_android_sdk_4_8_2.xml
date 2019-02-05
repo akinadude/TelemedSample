@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.appsflyer:af-android-sdk-4.8.2">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/af-android-sdk-4.8.2.aar/1def5d0f83a024c8303174f1b7099c88/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/af-android-sdk-4.8.2.aar/1def5d0f83a024c8303174f1b7099c88/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.appsflyer/af-android-sdk/4.8.2/80a588d4f72835ea3f91e9686e9782a7a155e941/af-android-sdk-4.8.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

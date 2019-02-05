@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: ru.medlinesoft.telemed:telemed-api-0.9">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/telemed-api-0.9.aar/b40c1902242169848641eabd24cc31e2/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/telemed-api-0.9.aar/b40c1902242169848641eabd24cc31e2/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
